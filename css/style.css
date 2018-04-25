@@ -163,11 +163,18 @@ path
     .fas
     {
         color: black;
+        margin-top: 1em;
+        font-size: 2em;
     }
 
     #sidebar .nav-link
     {
         color: black;
+    }
+
+    #sidebar .dropdown-toggle::after
+    {
+        border: none;
     }
 
     #content
