@@ -1,0 +1,26 @@
+body
+{
+    background: none;
+}
+
+.fas
+    {
+        color: black;
+    }
+
+#sidebar .nav-link
+    {
+        color: black;
+    }
+
+#content
+{
+    height: 100vh;
+    background-color: white;
+    margin-top: 0vh;
+    box-shadow: none;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 12vw;
+    border: none;
+}

@@ -1,0 +1,194 @@
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+body
+{
+    background-color: white;
+}
+.full-screen
+{
+    height: 100vh;  
+}
+
+.node
+{
+    height: 2em;
+    padding-top: 0.5em;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor:pointer;
+    font-size: 1.2em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.node-start
+{
+    height: 2em;
+    padding-top: 0.5em;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor:pointer;
+    font-size: 1.2em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#curve-layer
+{
+    position: absolute;
+    width: 1000vw; 
+    height: 1000vh;
+
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+
+}
+
+path
+{
+    stroke-width: 0;
+    stroke: white;
+}
+
+.path {
+    stroke-width: 1;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 100;
+    animation: dash 1s linear forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .level-0
+  {
+      max-height: 100vh;
+  }
+
+
+  .level-2 div
+  {
+          /* border: 1px solid white;
+      padding: 10px;
+      display: inline; */
+      background-image: url(logo.gif);
+      background-size: cover;
+      color: transparent;
+      height: 200px;
+      width: 200px;
+  }
+
+  .active
+  {
+      background-color: white;
+      color: black;
+  }
+
+  .level-1 div, .level-2 div, .level-3 div, .level-4 div, .level-5 div
+  {
+      margin-bottom: 1em;
+  }
+
+
+  #random-content
+  {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+  }
+
+  #omni-data-viz svg
+  {
+    width: 100vw; 
+    height: max-content;
+  }
+  #omni-data-viz svg
+  {
+      position: absolute;
+      margin-top: 1em;
+  }
+
+  #omni-data-viz .container-fluid
+  {
+      position: absolute;
+  }
+
+  .bar
+  {
+      border-bottom: 3px solid black;
+  }
+
+  .dropdown-menu
+  {
+      border: 0px solid white;
+      /* font color: #000; */
+  }
+
+  .dropbtn {
+    background-color: none;
+    color: black;
+
+}
+
+    body
+    {
+        background-image: url("../images/home_cover.jpg")     ;
+        background-repeat: no-repeat; 
+        background-position: center top;
+        background-attachment: fixed;
+    }
+
+    #sidebar
+    {
+        position: fixed;
+    /* left: 0; */
+    top: 0;
+    }
+
+    .fas
+    {
+        color: black;
+    }
+
+    #sidebar .nav-link
+    {
+        color: black;
+    }
+
+    #content
+    {
+        background-color: white;
+        margin-top: 60vh;
+        border-top: 1px solid black;
+        box-shadow: 0px -10px 10px -6px rgba(0,0,0, 0.2);
+        padding-top: 5vw;
+        padding-left: 12vw;
+        padding-right: 12vw;
+        padding-bottom: 12vw;
+    }
+
+    #content p {
+        line-height: 2;
+    }
+
+
+
+
+
+
+  
