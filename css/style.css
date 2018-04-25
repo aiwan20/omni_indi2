@@ -172,7 +172,7 @@ path
         color: black;
     }
 
-    #sidebar .dropdown-toggle::after
+    .dropdown-toggle::after
     {
         border: none;
     }
