@@ -147,9 +147,9 @@ path
 
     body
     {
-        background-image: url("../images/home_cover_update.jpg")     ;
-        background-repeat: top; 
-        background-position: center top;
+        background-image: url("../images/home_cover_update_2.jpg")     ;
+        background-repeat: no-repeat; 
+        background-position: center;
         background-attachment: fixed;
     }
 
