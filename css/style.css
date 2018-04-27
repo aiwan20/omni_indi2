@@ -148,7 +148,7 @@ path
     body
     {
         background-image: url("../images/home_cover_update.jpg")     ;
-        background-repeat: no-repeat; 
+        background-repeat: top; 
         background-position: center top;
         background-attachment: fixed;
     }
@@ -163,18 +163,11 @@ path
     .fas
     {
         color: black;
-        margin-top: 1em;
-        font-size: 2em;
     }
 
     #sidebar .nav-link
     {
         color: black;
-    }
-
-    .dropdown-toggle::after
-    {
-        border: none;
     }
 
     #content
