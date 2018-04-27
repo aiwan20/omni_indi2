@@ -29,8 +29,8 @@
                     <a class="dropdown-item" href="readmore.html">additional research</a>
                     <a class="dropdown-item" href="team.html">meet the team</a>
 
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">register</a>
+                    <!-- <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">register</a> -->
                   </div>
                 </li>
               </ul>
@@ -67,10 +67,10 @@
                     for ease of retrieval. Incoming data may range from CT scans, urine sample report, sleep data, to air quality. Those then are parsed based 
                     on data formats and later stored within the three main buckets: "clinical", "personal tracking", and "environmental"
                  </p>
-                 <br>
-                 <br>
 
-                 <img class="img-fluid" src="images/test_d3.gif">
+
+                 <img class="img-fluid" src="images/d3_gif.gif">
+                 <br>
                  <br>
                  <br>
 
@@ -78,62 +78,55 @@
                  <p>
                    As part of the proof-of-concept, we've developed a multi-agent simulation to demonstrate the potential benefit of OMNI INDI. To keep the simulation fairly simple (at this stage), 
                    we've only captured three of the main stakeholders: users, healthcare facilities, and researchers. 
-                  The simulation below was run across 1000 users, 10 researchers, and 3 healthcare facilities. 10% of the users were assumed to have rare 
-                  disease, 33% to have a chronic illness, and the rest to have no significant health issues.<a href=”dummyurl.com”>(insert link)</a> Each user condition implies 
-                  a certain frequency of doctor visits. The 10 researchers are randomly split into three research fields (medical imaging, pharmcaceutical, public health), hence 
-                  research field have unique desire for certain data types. There are three healthcare facilities to represent three different facility scales (small, medium, large). 
-                  Each facility is assumed to have a percentage of administrative burden added to the cost for each procedure. 
+                  The simulation below was run across 5 stakeholder groups: users, researchers, healthcare facilities, data miners, and insurers. 
                   <br>
                   <br>
-                  The diagrams below show how the three stakeholders interact with each other in both the current healthcare system and in the new OMNI INDI model.
+                  The diagrams below show how the stakeholders interact with each other in both the current healthcare system and in the new OMNI INDI model. Whereas in the 
+                  current model, the data miners benefit from selling health data from the hospitals, in the OMNI INDI model, the users take control on who and how much to sell. 
                  </p>
+                 <br>
+                 <br>
+                 <p align="center"><b>Existing System</b></p>
+                 <img class="img-fluid"  src="images/simulation_simple_update_gif.gif">
+                 <p align="center"><b>OMNI INDI</b></p>
+                 <img class="img-fluid"  src="images/simulation_simple_update_gif2.gif">
+                    
+                 <br>
+                 <br>
+                 <p align="center"><b>Simulation Assumptions</b></p>
+                 <br>
+                 <p><u>Users:</u><br>
+                    1000 users were put into the simulation. 10% of the users were assumed to have rare disease, 33% to have a chronic illness, and the rest to have no significant health issues.
+                    Each user condition has a different probability of visiting the healthcare facilities. <br>
+                  <br>
+                  
+                  <u>Healthcare Providers:</u><br>
+                    The healthcare providers are divided into three types (small, medium, large). Each facility is assumed to have a percentage of administrative 
+                    burden added to the cost for each procedure.<br>
+                  <br>
                 
-                 <div class="row">
-                    <div class="col-5 offset-1"><img class="img-fluid"  src="images/simulation_simple_gif_white.gif">
-                      <p align="center"><i>manage</i></p></div>
-                    <div class="col-5 offset-1"><img class="img-fluid"  src="images/simulation_simple_gif2_white.gif">
-                      <p align="center"><i>manage</i></p></div>
-                 </div>         
+                  <u>Researchers:</u> <br>
+                    Ten researchers were randomly split into three research fields (each dealing with typical, chronic, and rare condition treatments). 
+                    Each researcher has data targets for each data type depending upon their research field, therefore shifting demand for each data type. <br>
+                  <br>
+                  
+                    <u>Insurers:</u><br>
+                    The insurers affect the pricing for each user's procedure costs depending upon frequency of doctor's visits. 
+                  <br>
+                  <br> 
+                  <p align="center"><b>Simulation Results</b></p>  
+                  <p>The current model shows the difference from the existing system to the OMNI INDI model for each of the stakeholders. Users, healthcare providers, 
+                    and researchers all benefit from the OMNI INDI model, whereas the data miners lose out on their business. The diagram below shows both the average and expanded 
+                    outcomes of the users and healthcare providers (across each subgroups).
+
+                  </p>
+                 Learn more about the simulation <a href="https://github.com/hvvivek/OmniIndiSimulation">(OMNI INDI simulator)</a>.                     
+
+                 <img class="img-fluid"  src="images/simmulation-result-02.gif">
+                    
+                 <br>
+                 <br>
                  
-                 <br>
-                 <br>
-                 <p align="center"><b>Simulated Data</b></p>
-                 <p>The simulation data below were done given the following assumptions:....... Sed commodo sit amet dui in ultricies. Fusce ullamcorper tincidunt tellus, a semper sem fringilla in. Sed convallis laoreet lectus, quis fermentum nisl facilisis at. Sed semper lacinia ligula et feugiat. Vestibulum tincidunt nisl interdum euismod facilisis. Pellentesque posuere, augue vitae egestas aliquet, enim tellus scelerisque metus, vitae sagittis nunc dolor eu libero. Morbi eu posuere lorem. In hac habitasse platea dictumst. Aliquam vestibulum, odio a malesuada tincidunt, nunc tortor dapibus tortor, sed laoreet mauris ante id dolor. Vivamus eget aliquam est, nec porttitor risus. Integer id nibh ante. In consectetur nisl id justo rhoncus, et convallis purus tempor. Phasellus convallis sed tortor </p>
-
-                 <div class="row">
-                    <div class="col-5 offset-1"><img class="img-fluid"  src="images/placeholder.JPG">
-                      <p align="center"><i>manage</i></p></div>
-                    <div class="col-5 offset-1"><img class="img-fluid"  src="images/placeholder.JPG">
-                      <p align="center"><i>manage</i></p></div>
-                 </div>     
-                 <br>
-                 <br>
-
-
-                 <br>
-                 <p align="center"><b>How about for the research community?</b></p>
-                 <p>Robust, longitudinal health data sets are hard to come by, especially when the reseach is around specific demographics or health 
-                   conditions. With OMNI INDI, health data includes not just discharge data, but environmental data, family data, and personal device 
-                   data. This layered collection of quantified data and social data is far richer than the data currently available to researchers 
-                   from hospital consortiums and can be purchased on the OMNI INDI Marketplace. Individual users of OMNI INDI decide what data they 
-                   want to sell for personal profit and what data they want to keep private. So when a researcher visits the Exchange, they can query 
-                   for specific metrics, see the current price of that data query, and directly purchase data, or, they can create incentives to attract 
-                   additional, or new, users. 
-                   <a href=”howitworks.html”>(see market simulation)</a>
-                 </p>
-
-                 <img class="img-fluid" src="images/UX_usedata_market.gif">
-
-                 <!-- <p align="center"><b>How is OMNI INDI unique?</b></p>
-                 <p>Unlike Apple Health where the user does not own their health data, but rather primarily scans in copies of health records, 
-                   and unlike proprietary health record systems like EPIC where you can’t move data between specialists, primary providers, and 
-                   urgent care, OMNI INDI coalesces all health data directly from the generation source into one location which goes where the 
-                   patient goes, because they are the owners. </p> -->
-                 <br>
-                 <br>
-
-
-
                  <div class="dropdown-divider"></div>
                   
                  <p align="center"><b>In the News</b></p>
